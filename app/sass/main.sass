@@ -1,0 +1,31 @@
+@import "hamburgers"
+@import "libs"
+@import "mixins"
+@import "vars"
+@import "rfs"
+
+html, body 
+	height: 100%
+
+body 
+	position: relative
+	opacity: 1
+	color: #000
+	+rfs(16)
+	overflow: hidden
+
+
+.hamburger 
+	display: none
+	position: fixed
+	top: 20px	
+	right: 15px
+	padding: 0
+	z-index: 10
+	outline: none
+	width: 35px
+	height: 35px
+	&-box 
+		transform: translateY(2px)
+	
+@import "media"

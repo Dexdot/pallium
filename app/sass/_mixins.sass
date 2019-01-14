@@ -1,0 +1,29 @@
+// @font-face 
+// 	font-family: 'Bebas Neue'
+// 	src: url('../fonts/bebas/BebasNeueRegular.woff2') format('woff2'),url('../fonts/bebas/BebasNeueRegular.woff') format('woff')
+// 	font-weight: normal
+// 	font-style: normal
+//  font-display: swap
+
+// =reg
+// 	font-family: 'Bebas Neue', sans-serif
+// 	font-weight: 400
+
+// =muller($weight)
+// 	@if $weight == reg
+// 		font-family: 'Muller', sans-serif
+// 		font-weight: 400
+// 	@if $weight == md
+// 		font-family: 'Muller', sans-serif
+// 		font-weight: 500
+
+=clr
+  &:after
+    content: " "
+    display: table
+    clear: both
+=rimg
+  img
+    display: block
+    max-width: 100%
+    height: auto
